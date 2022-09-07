@@ -44,9 +44,9 @@ jobs:
         name: build
         path: build
     - name: Deploy to Firebase
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACTWEB_4F792 }}'
-          channelId: live
-          projectId: my-app-b1ff0
+      uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+        repoToken: '${{ secrets.GITHUB_TOKEN }}'
+        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACTWEB_4F792 }}'
+        channelId: live
+        projectId: my-app-b1ff0
